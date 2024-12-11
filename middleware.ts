@@ -2,7 +2,7 @@ import { NextResponse , NextRequest } from "next/server";
 import { verifyToken } from "./configs/auth";
 
 
-const publicRoutes = ["/login" , "/signup"]
+const publicRoutes = ["/" , "/signup"]
 const privateRoutes = ['/dashboard']
 
 export async function middleware(req : NextRequest){
